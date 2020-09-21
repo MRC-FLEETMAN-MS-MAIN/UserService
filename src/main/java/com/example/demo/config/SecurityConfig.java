@@ -59,7 +59,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.cors().disable();
 		http.csrf().disable().authorizeRequests()
-				.antMatchers("/**").hasIpAddress(env.getProperty("eureka.instance.hostname"))
+				.antMatchers("/**").hasIpAddress(env.getProperty("accessgate"))
 			//	.antMatchers("/**").hasIpAddress("172.17.0.5")
 				//.antMatchers("/authenticate").permitAll()
 				//.antMatchers(HttpMethod.POST,"/").permitAll()
