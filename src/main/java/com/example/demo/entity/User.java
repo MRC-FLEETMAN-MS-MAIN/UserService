@@ -9,7 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
-
+// THIS IS THE USER DATA TRANSFER OBJECT WHICH WILL BE MAPPED TO TABLE AS A PART OF ORM (OBJECT RELATIONAL MAPPING)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

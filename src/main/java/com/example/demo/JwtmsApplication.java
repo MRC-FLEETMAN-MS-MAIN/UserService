@@ -20,19 +20,6 @@ public class JwtmsApplication {
 	@Autowired
 	private UserRepository repository;
 	
-	/*
-	@PostConstruct
-	public void initUsers() {
-		
-		List<User> users = Stream.of(
-				
-				new User(101,"manish","password","manishrchandran@gmail.com"),
-				new User(102,"mukesh","password1","mukeshrchandran@gmail.com")
-				).collect(Collectors.toList());
-		
-		repository.saveAll(users);
-	}   */
-
 
 	@Bean
 	public WebMvcConfigurer corsConfigurer(){
